@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Dublin Editorial Cafe</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#322200",
+              "on-primary": "#ffffff",
+              "primary-fixed-dim": "#e1c1a4",
+              "on-primary-fixed-variant": "#59422c",
+              "secondary-fixed": "#b4f0c7",
+              "surface-tint": "#725a42",
+              "secondary": "#316948",
+              "on-secondary-fixed": "#002110",
+              "surface": "#fdf9f4",
+              "primary": "#33210d",
+              "on-tertiary": "#ffffff",
+              "on-tertiary-fixed": "#261900",
+              "on-error": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#98d4ac",
+              "tertiary-container": "#4d3600",
+              "inverse-on-surface": "#f4f0eb",
+              "tertiary-fixed": "#ffdea5",
+              "on-primary-fixed": "#291806",
+              "on-background": "#1c1c19",
+              "on-secondary-fixed-variant": "#165132",
+              "outline": "#80756c",
+              "on-surface-variant": "#4e453d",
+              "surface-container-high": "#ebe8e3",
+              "surface-dim": "#ddd9d5",
+              "inverse-primary": "#e1c1a4",
+              "error-container": "#ffdad6",
+              "surface-container-low": "#f7f3ee",
+              "on-error-container": "#93000a",
+              "tertiary-fixed-dim": "#e9c176",
+              "primary-container": "#4b3621",
+              "surface-bright": "#fdf9f4",
+              "on-tertiary-container": "#c39f58",
+              "primary-fixed": "#fedcbe",
+              "on-secondary-container": "#356e4c",
+              "surface-container": "#f1ede8",
+              "surface-container-highest": "#e6e2dd",
+              "on-surface": "#1c1c19",
+              "on-tertiary-fixed-variant": "#5d4201",
+              "on-primary-container": "#bd9f83",
+              "on-secondary": "#ffffff",
+              "background": "#fdf9f4",
+              "outline-variant": "#d2c4ba",
+              "secondary-container": "#b1edc4",
+              "error": "#ba1a1a",
+              "inverse-surface": "#31302d",
+              "surface-variant": "#e6e2dd"
+            },
+            fontFamily: {
+              "headline": ["Noto Serif"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .editorial-shadow {
+        box-shadow: 0 32px 64px -12px rgba(28, 28, 25, 0.08);
+      }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary/20 overflow-x-hidden">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-[#fdf9f4]/85 dark:bg-[#1c1c19]/85 backdrop-blur-md">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-6">
+<div class="text-2xl font-serif font-bold text-[#33210d] dark:text-[#f7f3ee] tracking-tighter">
+                The Dublin Editorial
+            </div>
+<div class="hidden md:flex items-center gap-12">
+<a class="text-[#33210d] dark:text-[#d2c4ba] hover:text-[#316948] transition-colors font-sans Manrope tracking-tight" href="#story">Our Story</a>
+<a class="text-[#33210d] dark:text-[#d2c4ba] hover:text-[#316948] transition-colors font-sans Manrope tracking-tight" href="#menu">Menu</a>
+<a class="text-[#33210d] dark:text-[#d2c4ba] hover:text-[#316948] transition-colors font-sans Manrope tracking-tight" href="#location">Location</a>
+<a class="text-[#33210d] dark:text-[#d2c4ba] hover:text-[#316948] transition-colors font-sans Manrope tracking-tight" href="#hours">Hours</a>
+</div>
+<button class="bg-primary text-on-primary px-8 py-3 rounded-full font-label uppercase tracking-widest text-xs hover:bg-primary-container transition-all Active:scale-95 duration-300">
+                Order Now
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Warm cafe interior with steam" class="w-full h-full object-cover opacity-90 scale-105" data-alt="Moody interior of a warm classic coffee shop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyhmqrCEj-lpUMEwG0q2FqJF3B2uPCxI4wKvzH_hK4SHLwEq6pVnJJ8KXJJUfrWhgk4TMmIqT2A0pkDDAFtOmK-1JDw_qFOOX5C-OK2hbMity9rnWNkgmKwzxFx2TEaiMIAwOEihq-CI_qXqCcxghl37d-ERucb_ajxyU868y1z5zqa6Tv6UvM5vnK555G8AWA0QuCRASa8D6S51rhtMuJBt6Vz6oYfOMxHXWOfHM4Yv2NgKw4PuzqZZiTctP5C59Rg59S_s9fMiM"/>
+<div class="absolute inset-0 bg-gradient-to-r from-surface via-surface/40 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-2xl">
+<span class="inline-block px-3 py-1 bg-tertiary/10 text-tertiary font-label text-xs uppercase tracking-[0.2em] mb-6 rounded">Est. 2012</span>
+<h1 class="font-headline italic font-bold text-7xl md:text-8xl text-primary leading-[0.9] tracking-tighter mb-8">
+                    Dublin's <br/> finest roast
+                </h1>
+<p class="font-body text-xl text-on-surface-variant leading-relaxed mb-10 max-w-md">
+                    Hand-crafted coffee and artisanal pastries served in a space designed for slow mornings and rainy Dublin afternoons.
+                </p>
+<div class="flex items-center gap-6">
+<a class="bg-primary text-on-primary px-10 py-5 rounded-full font-label uppercase tracking-widest text-sm hover:bg-primary-container transition-all flex items-center gap-2" href="#menu">
+                        View Menu
+                        <span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Asymmetric Element -->
+<div class="hidden lg:block absolute right-0 bottom-20 w-1/3 aspect-[4/5] bg-surface-container-low p-4 editorial-shadow -rotate-2">
+<img alt="Coffee pour over" class="w-full h-full object-cover" data-alt="Expertly crafted pour over coffee detail shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgkQta1onSfB9zQ32wwguahGwUW6V-WBHI1TpcQiD0Y84rqJzhxEdt8TW5ai_HGcxyUzmXN8r6-TQ9iUYJFxuosE-Nf9MtyB2cOfdW_0hqi70FveLe6Yhbpm73DgGy9KpUaJ_66vPK9filgNhv5rXB8ZxI-H4tbd8mwA9FMW0kocSqLIk5tZOzc6Gss9eSyfSGAR5Xs_T6C4KXRiSrWBs1ktLxKGe81nE6ryKIN0uJMxxp8AqYTIVGz2vvhzuL4y243a1IUoC1pBc"/>
+</div>
+</header>
+<!-- Our Story Section -->
+<section class="py-32 bg-surface" id="story">
+<div class="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl"></div>
+<h2 class="font-label text-xs uppercase tracking-[0.3em] text-tertiary mb-6">Our Roots</h2>
+<h3 class="font-headline italic text-5xl text-primary mb-8 leading-tight">Born from the mist of St. Stephen's Green.</h3>
+<div class="space-y-6 text-on-surface-variant leading-relaxed text-lg">
+<p>The Dublin Editorial began with a simple belief: that a great cup of coffee should be accompanied by the right light, a comfortable chair, and the quiet rhythm of the city.</p>
+<p>We source our beans from small-batch roasters who share our commitment to sustainability and fair practice. Every shot of espresso and every croissant is a tribute to the craftsmanship we found in the hidden lanes of Dublin 2.</p>
+</div>
+<div class="mt-12 flex items-center gap-4 text-secondary font-bold">
+<div class="w-12 h-[2px] bg-secondary"></div>
+<span class="font-label text-sm uppercase tracking-widest">Read our sustainability report</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<img class="w-full aspect-[3/4] object-cover rounded-xl shadow-sm" data-alt="Vintage cafe storefront window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6uAzYzEuF8TT43w7O9XcmthLOgTjvMeUcX1YBloH8POycyEiJXPDCRxcr5GDPFmZew_8biDeq4np9t1U9TsuEj-FH35kJPeIY6vegbb1V4IcBYnwcEbsnlp4OcsRmV5MFn8tdcypVgNHmQfkgW9u2mekRiqIy7Cgsqg_hNoDwxT9GB4n2TYGmZDMDHTzfo4G-FvvBgqep4IkjuPbemaxX-BlgtDn9JXagv-7XitCwfvEFCJ2bb3tBtCEThIN_A6bKgFiJSLl28hE"/>
+<img class="w-full aspect-square object-cover rounded-xl shadow-sm" data-alt="Latte art heart in ceramic mug" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALqPxwPVD7ig5dFk7yC8soyKR16FQfJxT3ne2nYzuriGvAKqtW7BJGeGv0LmfnwPnEvv-tjXq_1tS5XmcZSCY-xAlBDoD3uU7xMGc17MxFKbwH8sNolAkH5KiXSiCYTn6yd2iCCvFcx0OwlIhYxg0wOc9iiWCuvew6P-Nr_ifgkHpNaiwMgGupKaxq3mMrbiLdvZPI474j18p94TO3xYnmNUfuHiPEaatywHFZnBKW48xFI4Of3hlPRebBp_RHb3LJI2nVKEm5Lcw"/>
+</div>
+<div class="space-y-4">
+<img class="w-full aspect-square object-cover rounded-xl shadow-sm" data-alt="Newspaper and coffee on marble table" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8SMZCTxj1bM9ma8_YDYRW3nCzs8dOigydNIpBvWyKrh07Z6oFA6vNUdGMNAXmQtj6Mv4bPoSkruYgElb69FWkOgk_8WPvvnMx9gzOHcNQdxjCIl3TewKV2P9FKGhQGONwGPmWIVQ0N4ISHwNJGBuXwt32ZyXyIh7rR3ynl6DU83Cpp3cJ7EkQIT8q7AzEWISlyKqtLpk75ijj-GWj0zZjWNa0IeuMknJuSBMMGBay8LbJvX5uLy8HoiEpw87NNkjCeb8SHgwPqAo"/>
+<img class="w-full aspect-[3/4] object-cover rounded-xl shadow-sm" data-alt="Wooden shelving with coffee beans" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAo-YNf2joYdJ8wQ2H6TLPzR3Hl9KFtoLJlYHG7TDw-tw-kDcmQp4ajCVe3dcR_oKXZQ76tYJWCTvqeamhrctWkkq7x7qCP0kKWXld0IPXtLIAVpduGrfHiRZhPfB7JmR4y0BluEQqtexmSbcSUQiMg3UBRMLlMcqCOb5XVRhmpRGTjxwmHBFtHZEyQiOt4iTYEqMUAgh8Ow4Liirf4ou14wcDzummEcrlif-IUlBiAF6ecSRc_Tcq-hr0zLzlgYt0hVgp5dkG-2vc"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Menu Section (Bento Grid) -->
+<section class="py-32 bg-surface-container-low" id="menu">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-xl">
+<h2 class="font-label text-xs uppercase tracking-[0.3em] text-tertiary mb-6">Seasonal Curations</h2>
+<h3 class="font-headline text-5xl text-primary italic">The Daily Journal</h3>
+</div>
+<div class="flex gap-4">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-6">
+<!-- Large Feature -->
+<div class="md:col-span-2 lg:col-span-3 bg-surface p-8 rounded-2xl editorial-shadow flex flex-col justify-between group">
+<div>
+<div class="flex justify-between items-start mb-12">
+<span class="bg-secondary text-on-secondary px-3 py-1 rounded-md font-label text-[10px] uppercase tracking-widest">Signature</span>
+<span class="font-headline italic text-2xl">€5.50</span>
+</div>
+<h4 class="font-headline text-4xl text-primary mb-4 group-hover:translate-x-2 transition-transform duration-300">The Editorial Pour-Over</h4>
+<p class="text-on-surface-variant max-w-xs">Single-origin Ethiopian beans with notes of jasmine, bergamot, and rain-washed stone.</p>
+</div>
+<img class="w-full h-48 object-cover mt-12 grayscale group-hover:grayscale-0 transition-all duration-500 rounded-lg" data-alt="Minimalist pour over coffee setup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDES0ZxC0KZTqeC57byuQgyftuRDRvi08ntFQ3LqVP0pJXMBr6rL-5ioz54vBQzA7OGZsK0BH3VvsmCHEf3F7cex_SxlaI1ondU9r1EoZeruxuKiHSDadllCVA6unWPjgV7amnoDe8AVTaKTHlPej8trXGr767ACh3-LxGrUCTrjWjwO4MVrfMBUIx_VcoFomF2-KDa-9lPvx3WY2mwe1hMcBKSistupb8HMPhjyddL1r6Zfjj1tj5yV9ZWjo9jajiiqkCnZ-umiRg"/>
+</div>
+<!-- Medium Feature -->
+<div class="md:col-span-2 lg:col-span-3 bg-primary-container p-8 rounded-2xl text-on-primary-container flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-12">
+<span class="border border-on-primary-container/30 px-3 py-1 rounded-md font-label text-[10px] uppercase tracking-widest">Morning Baker</span>
+<span class="font-headline italic text-2xl">€4.20</span>
+</div>
+<h4 class="font-headline text-4xl mb-4">Irish Sourdough Toast</h4>
+<p class="opacity-80 max-w-xs">Thick-cut fermented dough served with whipped salted butter from Kerry and seasonal preserve.</p>
+</div>
+<div class="mt-12 h-48 bg-[#4b3621] rounded-lg flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover mix-blend-overlay" data-alt="Crusty sourdough bread with butter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdhsOWwJcPDtvmXr3K74WC-rNycRveiJrl2gZb-xhW_1pQtv4pwchpu7E1LrZW_qWJkygY_Um0eftMcoi2l4dgEubx26ktLeMUsott6hxU5bewrqhdyeAxd7EgRrn-t9T7AvAf3SZL7fz0Nh2xasN0mXW9cJ5mFeNfdJfSpjoKw8iU6mUPGH58ISDYFuO1s7N2MxkiU_N6y0jCKYFpPjP8y29CohMBDUbCIIHYiLkEgsaqi95Y3j4hp4_XTvGOUHnidmx1uj2lxWc"/>
+</div>
+</div>
+<!-- Small Items -->
+<div class="lg:col-span-2 bg-surface p-6 rounded-2xl flex flex-col justify-between border-b-4 border-tertiary/20">
+<h4 class="font-headline text-xl text-primary mb-2">Pistachio Rose Latte</h4>
+<p class="text-sm text-on-surface-variant mb-6">Hand-ground nuts, organic rose water, and double-shot espresso.</p>
+<span class="font-headline italic text-lg text-tertiary">€4.80</span>
+</div>
+<div class="lg:col-span-2 bg-surface p-6 rounded-2xl flex flex-col justify-between border-b-4 border-secondary/20">
+<h4 class="font-headline text-xl text-primary mb-2">Wild Berry Galette</h4>
+<p class="text-sm text-on-surface-variant mb-6">Flaky pastry crust with hand-picked Wicklow berries and crème fraîche.</p>
+<span class="font-headline italic text-lg text-tertiary">€6.50</span>
+</div>
+<div class="lg:col-span-2 bg-surface p-6 rounded-2xl flex flex-col justify-between border-b-4 border-primary/20">
+<h4 class="font-headline text-xl text-primary mb-2">Cold Brew Tonic</h4>
+<p class="text-sm text-on-surface-variant mb-6">12-hour steeped coffee charged with elderflower tonic and rosemary.</p>
+<span class="font-headline italic text-lg text-tertiary">€5.20</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Location & Hours Section -->
+<section class="py-32 bg-surface overflow-hidden" id="location">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid lg:grid-cols-12 gap-16 items-start">
+<div class="lg:col-span-5">
+<h2 class="font-label text-xs uppercase tracking-[0.3em] text-tertiary mb-6">Visit Us</h2>
+<h3 class="font-headline text-6xl text-primary mb-10 italic">A quiet corner in the heart of Dublin.</h3>
+<div class="mb-16">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-tertiary">location_on</span>
+<p class="text-xl font-headline italic">12 Editorial Mews, Dublin 2, Ireland</p>
+</div>
+<p class="text-on-surface-variant ml-10">Tucked away just behind the Royal College of Surgeons. Look for the brass lantern.</p>
+</div>
+<div class="bg-surface-container p-10 rounded-2xl border-l-4 border-secondary" id="hours">
+<h4 class="font-label text-sm uppercase tracking-widest text-secondary mb-8">Opening Hours</h4>
+<div class="space-y-4">
+<div class="flex justify-between border-b border-outline-variant/30 pb-2">
+<span class="font-medium">Monday — Friday</span>
+<span class="font-headline italic">07:30 — 18:00</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/30 pb-2">
+<span class="font-medium">Saturday</span>
+<span class="font-headline italic">08:30 — 19:00</span>
+</div>
+<div class="flex justify-between border-b border-outline-variant/30 pb-2">
+<span class="font-medium">Sunday</span>
+<span class="font-headline italic">09:00 — 17:00</span>
+</div>
+</div>
+<div class="mt-8 flex items-center gap-2 text-secondary text-sm">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">circle</span>
+<span>Currently Brewing</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 relative">
+<div class="absolute -z-10 top-20 -right-20 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="relative bg-surface-container-high aspect-[16/10] rounded-2xl overflow-hidden editorial-shadow group">
+<img alt="Map of Dublin" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Stylized vintage map of central Dublin" data-location="Dublin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-FLTfWL_eQtMWlaasQ9m4YM6SJt8QZl5NaORQ8BJllkJ5Iubfg_yGxJ5jPwlnfN_CiJPVhv13nJFOhLl9MvhpLj852tApBXWpOB8rJXyZgexuuLc27SSkGALVXtVZv7ZkZF7oZIEt7NWnmu_7R74pHqRRudg5tkqTb4ocsJ3FZ5nTbIN8VTnBshOjLVgmQapzuE03b8JADSaTFAo2m6ZnOHoHTYW9K8aTEgbbtvq8kqvykIH3C5YOO39MX897QP3fYUsa1WCvD5A"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-on-primary animate-bounce shadow-xl">
+<span class="material-symbols-outlined">coffee</span>
+</div>
+</div>
+</div>
+<!-- Overlapping Content -->
+<div class="absolute -bottom-10 -left-10 bg-tertiary p-8 text-on-tertiary max-w-xs rounded-xl editorial-shadow hidden xl:block">
+<p class="font-headline italic text-xl mb-4">"The perfect refuge from the Irish rain."</p>
+<span class="font-label text-[10px] uppercase tracking-widest opacity-60">— The Dublin Guide</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 bg-primary text-on-primary text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute top-0 left-0 w-full h-full" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+</div>
+<div class="max-w-4xl mx-auto px-8 relative z-10">
+<h2 class="font-headline text-6xl md:text-7xl mb-12 italic">Keep the kettle warm for us.</h2>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6">
+<button class="bg-surface text-primary px-12 py-5 rounded-full font-label uppercase tracking-widest text-sm hover:bg-surface-container-high transition-all">
+                    Order for Collection
+                </button>
+<button class="border border-on-primary/30 text-on-primary px-12 py-5 rounded-full font-label uppercase tracking-widest text-sm hover:bg-on-primary hover:text-primary transition-all">
+                    Reserve a Table
+                </button>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#f7f3ee] dark:bg-[#1c1c19] w-full py-16 px-8 mt-20">
+<div class="flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto gap-8">
+<div class="text-lg font-serif italic text-[#33210d] dark:text-[#f7f3ee]">
+                The Dublin Editorial
+            </div>
+<div class="flex flex-wrap justify-center gap-10">
+<a class="font-sans text-xs uppercase tracking-widest Manrope text-[#1c1c19]/60 dark:text-[#f7f3ee]/60 hover:text-[#33210d] dark:hover:text-[#f7f3ee] underline decoration-[#322200]" href="#">Privacy Policy</a>
+<a class="font-sans text-xs uppercase tracking-widest Manrope text-[#1c1c19]/60 dark:text-[#f7f3ee]/60 hover:text-[#33210d] dark:hover:text-[#f7f3ee] underline decoration-[#322200]" href="#">Terms of Service</a>
+<a class="font-sans text-xs uppercase tracking-widest Manrope text-[#1c1c19]/60 dark:text-[#f7f3ee]/60 hover:text-[#33210d] dark:hover:text-[#f7f3ee] underline decoration-[#322200]" href="#">Sustainability Report</a>
+<a class="font-sans text-xs uppercase tracking-widest Manrope text-[#1c1c19]/60 dark:text-[#f7f3ee]/60 hover:text-[#33210d] dark:hover:text-[#f7f3ee] underline decoration-[#322200]" href="#">Careers</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-[#33210d] cursor-pointer hover:scale-110 transition-transform">public</span>
+<span class="material-symbols-outlined text-[#33210d] cursor-pointer hover:scale-110 transition-transform">share</span>
+<span class="material-symbols-outlined text-[#33210d] cursor-pointer hover:scale-110 transition-transform">mail</span>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-12 pt-8 border-t border-outline-variant/20 text-center">
+<p class="font-sans text-xs uppercase tracking-widest Manrope text-[#1c1c19]/40 dark:text-[#f7f3ee]/40">
+                © 2024 The Dublin Editorial Cafe. Crafted for the rainy afternoons.
+            </p>
+</div>
+</footer>
+</body></html>
